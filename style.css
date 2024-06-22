@@ -793,6 +793,7 @@ body::-webkit-scrollbar {
     #terpopuler {
         margin-top: 15rem;
         margin-bottom: 5rem;
+        font-size: 3rem;
     }
 
     .content-terlaris {
@@ -809,10 +810,12 @@ body::-webkit-scrollbar {
         margin-top: 1rem;
         width: 90%;
         margin: 2rem auto;
+        font-size: 1.4rem;
     }
 
     #cekSekarang {
-        margin-top: 35rem;
+        margin-top: 55rem;
+        font-size: 3rem;
     }
 
     .galery {
@@ -837,6 +840,14 @@ body::-webkit-scrollbar {
         font-size: 1rem;
     }
 
+    .coming-soon-header {
+        font-size: 3rem;
+    }
+
+    .coming-soon-text {
+        font-size: 1.4rem;
+    }
+
     .coming-soon {
         width: 90%;
     }
@@ -848,6 +859,10 @@ body::-webkit-scrollbar {
     .coming-soon h1 {
         text-align: center;
         font-size: 12px;
+    }
+
+    #pro-header {
+        font-size: 3rem;
     }
 
     #pro {
@@ -865,12 +880,16 @@ body::-webkit-scrollbar {
         font-size: 2rem;
     }
 
+    #pro p, #pro ul li {
+        font-size: 1.4rem;
+    }
+
     .pro-max .color2, .pro .color1 {
         height: 6rem;
     }
 
     #founder {
-        margin-top: 60rem;
+        margin-top: 70rem;
     }
 
     .founder {
@@ -890,6 +909,10 @@ body::-webkit-scrollbar {
         margin: 1rem 0 0;
     }
 
+    #ahli {
+        font-size: 3rem;
+    }
+
     .roki, .sudin, .limbad, .kimoci {
         justify-content: center;
         padding-top: 2rem;
@@ -898,6 +921,19 @@ body::-webkit-scrollbar {
 
     .pesan h1 {
         margin-top: 2rem;
+    }
+
+    .footer {
+        font-size: 1.6rem;
+        padding: 2rem;
+    }
+
+    .ringkasan, .kontak, .isi {
+        width: 80%;
+    }
+
+    .copy {
+        font-size: 1.4rem;
     }
 
 }

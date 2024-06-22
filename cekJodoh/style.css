@@ -296,4 +296,17 @@ body::-webkit-scrollbar {
     .form {
         width: 90%;
     }
+
+    .footer {
+        font-size: 1.6rem;
+        padding: 2rem;
+    }
+
+    .ringkasan, .kontak, .isi {
+        width: 80%;
+    }
+
+    .copy {
+        font-size: 1.4rem;
+    }
 }
