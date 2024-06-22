@@ -167,6 +167,7 @@ body::-webkit-scrollbar {
     display: flex;
     margin-top: 15rem;
     align-items: center;
+    padding: 1rem;
 }
 
 .negara h1 {
@@ -695,5 +696,41 @@ body::-webkit-scrollbar {
     }
     to {
         opacity: 0.3;
+    }
+}
+
+/* media queries */
+
+@media (max-width: 450px) {
+    html {
+        font-size: 45%;
+        max-width: 450px;
+    }
+
+    .navbar .navbar-brand p {
+        display: none;
+        background-color: red;
+    }
+
+    .banner-text {
+        margin-top: 4rem;
+    }
+
+    .banner-text h1 span {
+        padding: 4px;
+    }
+
+    .banner-text a {
+        padding: 8px 10px;
+    }
+
+    .gradient {
+        top: 37vh;
+    }
+
+    /* content */
+
+    .galery .sub-galery h1 {
+        font-size: 8px;
     }
 }
