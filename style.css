@@ -710,7 +710,6 @@ body::-webkit-scrollbar {
     }
 
     body {
-
         overflow-x: hidden;
     }
 
@@ -899,10 +898,6 @@ body::-webkit-scrollbar {
 
     .pesan h1 {
         margin-top: 2rem;
-    }
-    
-    .footer {
-        /* width: 95%; */
     }
 
 }

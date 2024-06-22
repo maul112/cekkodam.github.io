@@ -188,9 +188,11 @@ body::-webkit-scrollbar {
 .footer {
     padding: 4rem 8rem;
     background-color: rgba(29, 37, 48);
-    margin-top: 4rem;
+    margin: 4rem auto 0;
     justify-content: center;
     display: flex;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 .ringkasan, .kontak, .lokasi {
@@ -246,6 +248,11 @@ body::-webkit-scrollbar {
     width: 100%;
 }
 
+.ahli span {
+    background-color: yellow;
+    color: black;
+}
+
 .copy p {
     padding: 0 0 2rem 10%;
     background-color: rgba(29, 37, 48);
@@ -258,4 +265,35 @@ body::-webkit-scrollbar {
 
 /* footer end */
 
-/* keyframes */
+/* media queries */
+
+@media (max-width: 450px) {
+    html {
+        font-size: 55%;
+        max-width: 450px;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .navbar {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .navbar .navbar-brand p {
+        display: none;
+        background-color: red;
+    }
+
+    .navbar .container-nav .subnav {
+        margin-right: 0;
+        padding: 6px;
+        font-size: 12px;
+    }
+
+    .form {
+        width: 90%;
+    }
+}
