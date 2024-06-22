@@ -735,7 +735,6 @@ body::-webkit-scrollbar {
         height: 65vh;
         width: initial;
         top: 0;
-        left: -30rem;
         right: 0;
     }
 
@@ -764,7 +763,7 @@ body::-webkit-scrollbar {
     }
 
     .gradient {
-        top: 45vh;
+        top: 50vh;
     }
 
     /* content */
@@ -774,7 +773,7 @@ body::-webkit-scrollbar {
     }
 
     .statistik {
-        margin: auto;
+        margin: 20rem auto 0;
     }
 
     .statistik .negara {
@@ -792,7 +791,8 @@ body::-webkit-scrollbar {
     }
 
     #terpopuler {
-        margin-bottom: 2rem;
+        margin-top: 15rem;
+        margin-bottom: 5rem;
     }
 
     .content-terlaris {
