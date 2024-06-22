@@ -161,11 +161,11 @@ body::-webkit-scrollbar {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    margin-top: 15rem;
 }
 
 .negara {
     display: flex;
-    margin-top: 15rem;
     align-items: center;
     padding: 1rem;
 }
@@ -602,9 +602,11 @@ body::-webkit-scrollbar {
 .footer {
     padding: 4rem 8rem;
     background-color: rgba(29, 37, 48);
-    margin-top: 4rem;
+    margin: 4rem auto 0;
     justify-content: center;
     display: flex;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 .ringkasan, .kontak, .lokasi {
@@ -703,8 +705,18 @@ body::-webkit-scrollbar {
 
 @media (max-width: 450px) {
     html {
-        font-size: 45%;
+        font-size: 55%;
         max-width: 450px;
+    }
+
+    body {
+
+        overflow-x: hidden;
+    }
+
+    .navbar {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
     }
 
     .navbar .navbar-brand p {
@@ -712,8 +724,36 @@ body::-webkit-scrollbar {
         background-color: red;
     }
 
+    .navbar .container-nav .subnav {
+        margin-right: 0;
+        padding: 6px;
+        font-size: 12px;
+    }
+
+    /* banner */
+
+    .banner-image {
+        height: 65vh;
+        width: initial;
+        top: 0;
+        left: -30rem;
+        right: 0;
+    }
+
     .banner-text {
-        margin-top: 4rem;
+        margin: 2rem 0 0 2rem;
+        width: 90%;
+        text-align: center;
+    }
+
+    .banner-text h1 {
+        margin-bottom: 1rem;
+        font-size: 2.5rem;
+    }
+
+    .banner-text p {
+        font-size: 12px;
+        width: 100%;
     }
 
     .banner-text h1 span {
@@ -725,12 +765,144 @@ body::-webkit-scrollbar {
     }
 
     .gradient {
-        top: 37vh;
+        top: 45vh;
     }
 
     /* content */
 
-    .galery .sub-galery h1 {
-        font-size: 8px;
+    .content {
+        padding: 0;
     }
+
+    .statistik {
+        margin: auto;
+    }
+
+    .statistik .negara {
+        display: block;
+        text-align: center;
+        margin: 1rem 2rem 0;
+    }
+
+    .statistik .negara h1 {
+        font-size: 4rem;
+    }
+
+    .statistik .negara p {
+        font-size: 1.5rem;
+    }
+
+    #terpopuler {
+        margin-bottom: 2rem;
+    }
+
+    .content-terlaris {
+        display: block;
+    }
+    
+    .content-terlaris .image-container {
+        margin: auto;
+        width: 85%;
+        height: 40vh;
+    }
+
+    .content-terlaris .text {
+        margin-top: 1rem;
+        width: 90%;
+        margin: 2rem auto;
+    }
+
+    #cekSekarang {
+        margin-top: 35rem;
+    }
+
+    .galery {
+        width: 95%;
+        margin: auto;
+    }
+
+    .galery .sub-galery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .cek-kodam, .cek-jodoh, .cek-cita-cita, .cek-aura {
+        width: 160px;
+        height: 160px;
+        margin: 8px auto;
+    }
+
+    .galery .sub-galery h1 {
+        font-size: 1rem;
+    }
+
+    .coming-soon {
+        width: 90%;
+    }
+
+    .coming-soon .card {
+        width: 80%;
+    }
+
+    .coming-soon h1 {
+        text-align: center;
+        font-size: 12px;
+    }
+
+    #pro {
+        width: 90%;
+    }
+
+    .free, .pro-max, .pro {
+        margin: auto;
+        margin-top: 2rem;
+        height: fit-content;
+        padding-bottom: 1rem;
+    }
+
+    .free h2, .pro-max h2, .pro h2 {
+        font-size: 2rem;
+    }
+
+    .pro-max .color2, .pro .color1 {
+        height: 6rem;
+    }
+
+    #founder {
+        margin-top: 60rem;
+    }
+
+    .founder {
+        width: 95%;
+        margin: auto;
+    }
+
+    .founder .maul, .founder .aziz {
+        width: 16rem;
+    }
+
+    .founder .maul .image, .founder .aziz .image {
+        width: 100%;
+    }
+
+    .founder p {
+        margin: 1rem 0 0;
+    }
+
+    .roki, .sudin, .limbad, .kimoci {
+        justify-content: center;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .pesan h1 {
+        margin-top: 2rem;
+    }
+    
+    .footer {
+        /* width: 95%; */
+    }
+
 }
