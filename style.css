@@ -725,7 +725,10 @@ body .navbar .container-nav .active {
 
     .navbar .navbar-brand p {
         display: none;
-        background-color: red;
+    }
+
+    body .navbar .navbar-brand .logo {
+        margin-right: 0;
     }
 
     .navbar .container-nav .subnav {
