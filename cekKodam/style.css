@@ -32,6 +32,11 @@ body::-webkit-scrollbar {
 
 /* navbar start */
 
+body .navbar .container-nav .active {
+    background-color: red;
+    color: black;
+}
+
 .navbar {
     display: flex;
     align-items: center;
@@ -48,7 +53,7 @@ body::-webkit-scrollbar {
     align-items: inherit;
 }
 
-.navbar-brand p #status {
+#status {
     background-color: gray;
     border-radius: 6px;
     padding: 6px 8px;
@@ -126,9 +131,9 @@ body::-webkit-scrollbar {
     margin: auto;
 }
 
-.form #btn {
+.form #btn, .kembali {
     display: block;
-    margin: 3rem auto;
+    margin: 3rem auto 0;
     padding: 1rem;
     border-radius: 1rem;
     font-size: 1.5rem;
@@ -137,24 +142,27 @@ body::-webkit-scrollbar {
     transition: 0.3s;
 }
 
-.form #btn:hover {
+.form #btn:hover, .kembali:hover {
     transform: scale(1.1);
 }
 
 /* #hasil  */
 
 .subhasil {
-    display: flex;
-    justify-content: space-between;
-    background-color: gray;
     border-radius: 1rem;
     padding: 1rem;
-    align-items: center;
     margin-bottom: 2rem;
+    text-align: center;
+    font-size: 3rem;
 }
 
 .subhasil p {
-    font-size: 1.2rem;
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+.none {
+    display: none;
 }
 
 /* content end */
@@ -172,7 +180,7 @@ body::-webkit-scrollbar {
 }
 
 .ringkasan, .kontak, .lokasi {
-    width: 30rem;
+    width: 25rem;
     height: fit-content;
     padding: 2rem;
 }
@@ -239,7 +247,27 @@ body::-webkit-scrollbar {
     text-align: center;
 }
 
+.loading h2 {
+    text-align: center;
+}
+
+.lag {
+    width: 5rem;
+    height: 5rem;
+    animation: spin 1s infinite;
+    background-color: red;
+    margin: 2rem auto 0;
+}
+
 /* footer end */
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    } to {
+        transform: rotate(360deg);
+    }
+}
 
 /* media queries */
 

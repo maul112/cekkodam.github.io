@@ -17,6 +17,11 @@ body::-webkit-scrollbar {
 
 /* navbar start */
 
+body .navbar .container-nav .active {
+    background-color: red;
+    color: black;
+}
+
 .navbar {
     display: flex;
     align-items: center;
@@ -33,7 +38,7 @@ body::-webkit-scrollbar {
     align-items: inherit;
 }
 
-.navbar-brand p #status {
+#status {
     background-color: gray;
     border-radius: 6px;
     padding: 6px 8px;
@@ -610,7 +615,7 @@ body::-webkit-scrollbar {
 }
 
 .ringkasan, .kontak, .lokasi {
-    width: 30rem;
+    width: 25rem;
     height: fit-content;
     padding: 2rem;
 }

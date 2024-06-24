@@ -12,11 +12,11 @@
     <nav class="navbar">
         <div class="navbar-brand">
           <img src="../img/C_Logo.png" alt="Logo" class="logo">
-          <p>MAU<span>l</span>CEKCODAMN.com <span id="status">Free</span></p>
+          <p>MAU<span>l</span>CEKCODAMN.com</p><span id="status">Free</span>
         </div>
         <div class="container-nav">
             <a href="../index.html" class="subnav">Beranda</a>
-            <a href="#" class="subnav">Kodam</a>
+            <a href="#" class="subnav active">Kodam</a>
             <a href="../cekJodoh/cekJodoh.html" class="subnav">Jodoh</a>
             <a href="../cekCita/cekCita.html" class="subnav">Cita-Cita</a>
             <a href="../cekAura/cekAura.html" class="subnav">Aura</a>
@@ -27,11 +27,21 @@
     <!-- content start -->
 
     <div class="form">
-        <h1>Cek Kodam Online</h1>
-        <label for="nama">Masukkan Namamu</label>
-        <input type="text" id="nama">
-        <button id="btn">CEK</button>
-        <div id="hasil"></div>
+        <div class="formContainer">
+            <h1>Cek Kodam Online</h1>
+            <label for="nama">Masukkan Namamu</label>
+            <input type="text" id="nama">
+            <button id="btn">CEK</button>
+        </div>
+        <div id="hasil" class="subhasil none">
+            <h2></h2>
+            <p></p>
+        </div>
+        <button class="kembali none">Kembali</button>
+        <div class="loading none">
+            <h2>Loading... <span id="progres"></span>%</h2>
+            <div class="lag"></div>
+        </div>
     </div>
 
     <!-- content end -->

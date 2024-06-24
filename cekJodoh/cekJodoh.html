@@ -12,12 +12,12 @@
     <nav class="navbar">
         <div class="navbar-brand">
           <img src="../img/C_Logo.png" alt="Logo" class="logo">
-          <p>MAU<span>l</span>CEKCODAMN.com <span id="status">Free</span></p>
+          <p>MAU<span>l</span>CEKCODAMN.com</p><span id="status">Free</span>
         </div>
         <div class="container-nav">
             <a href="../index.html" class="subnav">Beranda</a>
             <a href="../cekKodam/cekKodam.html" class="subnav">Kodam</a>
-            <a href="#" class="subnav">Jodoh</a>
+            <a href="#" class="subnav active">Jodoh</a>
             <a href="../cekCita/cekCita.html" class="subnav">Cita-Cita</a>
             <a href="../cekAura/cekAura.html" class="subnav">Aura</a>
         </div>
@@ -27,20 +27,32 @@
     <!-- content start -->
 
     <div class="form">
-        <h1>Cek Jodoh Online</h1>
-        <div class="input">
-            <div class="laki">
-                <label for="nama">Nama</label>
-                <input type="text" id="nama1">
+        <div class="formContainer">
+            <h1>Cek Jodoh Online</h1>
+            <div class="input">
+                <div class="laki">
+                    <label for="nama">Nama</label>
+                    <input type="text" id="nama1">
+                </div>
+                <img src="../img/love.png" alt="love">
+                <div class="laki">
+                    <label for="nama">Nama</label>
+                    <input type="text" id="nama2">
+                </div>
             </div>
-            <img src="../img/love.png" alt="love">
-            <div class="laki">
-                <label for="nama">Nama</label>
-                <input type="text" id="nama2">
+            <button id="btn">CEK</button>
+        </div>
+        <div id="hasil" class="subhasil none">
+            <img id="image" src="" alt="meme">
+            <div class="detail">
+                
             </div>
         </div>
-        <button id="btn">CEK</button>
-        <div id="hasil"></div>
+        <button class="kembali none">Kembali</button>
+        <div class="loading none">
+            <h2>Loading... <span id="progres"></span>%</h2>
+            <div class="lag"></div>
+        </div>
     </div>
 
     <!-- content end -->
